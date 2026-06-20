@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>odoo Partner Programı · Türkiye</title>
-  <meta name="description" content="Logo, Nebim ve Mikro partnerleri ile özel yazılım geliştiren ekipler, portföylerine 80 üzeri modülü olan açık kaynaklı odoo'yu ekliyor. 20 dakikalık görüşme talep edin." />
+  <meta name="description" content="Logo, Nebim, Mikro ve diğer yerel ERP partnerleri, portföylerine 80 üzeri modülü olan açık kaynaklı odoo'yu ekliyor. 20 dakikalık görüşme talep edin." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -234,11 +234,24 @@
     }
     .trust-label {
       text-align: center;
-      color: var(--text-muted);
-      font-size: 13px;
-      letter-spacing: 0.08em;
+      margin-bottom: 30px;
+    }
+    .trust-label .trust-eyebrow {
+      display: block;
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
+    }
+    .trust-label .trust-title {
+      display: block;
+      color: var(--text);
+      font-size: clamp(21px, 2.8vw, 28px);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
     }
     .marquee { display: flex; width: max-content; animation: marquee 60s linear infinite; }
     .marquee-track { display: flex; align-items: center; gap: 52px; padding-right: 52px; }
@@ -255,6 +268,13 @@
     .marquee img:hover { filter: grayscale(0); opacity: 1; }
     /* İstanbul Enerji logo reads small, so show it larger */
     .marquee img[src="istenerji.png"] { height: 58px; max-width: 200px; }
+    /* These logos have a small mark / lots of whitespace, so scale them up */
+    .marquee img[src="STELZER%20HOLDINGG.png"],
+    .marquee img[src="Boraq%20Group.png"],
+    .marquee img[src="F13%20İSTANBUL%20REKLAM%20VE%20YAZILIM%20A.Ş.jpg"],
+    .marquee img[src="Cabri%20Bilgi%20Teknolojileri.jpg"],
+    .marquee img[src="Projet%20Solutions.png"],
+    .marquee img[src="7Gates%20Interactive%20Technologies.png"] { height: 62px; max-width: 210px; }
 
     /* ---------- Section base ---------- */
     section.block { padding: 100px 0; }
@@ -484,7 +504,7 @@
       <div class="hero-inner">
         <span class="pill reveal">odoo Resmi Partner Programı</span>
         <h1 class="reveal" style="--delay:0.05s">Dünyanın En Hızlı Büyüyen ERP'si.<br />Türkiye'de Henüz <span class="accent">Alan Var.</span></h1>
-        <p class="hero-sub reveal" style="--delay:0.1s">Logo, Nebim, Mikro ve özel yazılım geliştiren ekipler, mevcut işlerini sürdürürken portföylerine 80 üzeri modülü tek çatı altında toplayan açık kaynaklı bir platform ekliyor. Tek üründen birden fazla modüle, tek seferlik projeden tekrar eden gelire geçiyorlar.</p>
+        <p class="hero-sub reveal" style="--delay:0.1s">Logo, Nebim, Mikro ve diğer yerel ERP partnerleri, mevcut işlerini sürdürürken portföylerine 80 üzeri modülü tek çatı altında toplayan açık kaynaklı bir platform ekliyor. Kapalı bir bayilikten; özelleştirebildikleri, kendi çözümlerini konumlandırabildikleri ve dünyanın her yerinde satabildikleri bir ekosisteme geçiyorlar.</p>
         <a class="btn btn-hero reveal" style="--delay:0.15s" href="https://calendar.app.google/gtgft4khqcgytqjD8" target="_blank" rel="noopener">20 Dakikalık Görüşme Talep Et</a>
         <p class="hero-micro reveal" style="--delay:0.2s">20 dakika. Taahhüt yok.</p>
 
@@ -512,7 +532,10 @@
 
   <!-- ============ TRUST BAR ============ -->
   <section class="trust">
-    <div class="trust-label" style="text-transform:none; font-size:14px; letter-spacing:0.02em;">odoo Türkiye Referanslarımız</div>
+    <div class="trust-label">
+      <span class="trust-eyebrow">Bizi Tercih Edenler</span>
+      <span class="trust-title">odoo Türkiye Referanslarımız</span>
+    </div>
     <div class="marquee">
       <div class="marquee-track">
         <img src="odeal_logo-2048x671.png" alt="Odeal" />
@@ -545,7 +568,10 @@
 
   <!-- ============ PARTNERS BAR ============ -->
   <section class="trust">
-    <div class="trust-label" style="text-transform:none; font-size:14px; letter-spacing:0.02em;">odoo ile Çözüm Sunan Değerli Ortaklarımız</div>
+    <div class="trust-label">
+      <span class="trust-eyebrow">Çözüm Ortaklarımız</span>
+      <span class="trust-title">odoo ile Çözüm Sunan Değerli Ortaklarımız</span>
+    </div>
     <div class="marquee" style="animation-duration: 82s;">
       <div class="marquee-track">
         <img src="Codequarters.png" alt="Codequarters" />
@@ -589,29 +615,24 @@
     <div class="container">
       <span class="eyebrow reveal">Sorun</span>
       <h2 class="section-title reveal" style="--delay:0.05s">İşiniz sağlam. Ama büyüme birkaç noktada sıkışıyor.</h2>
-      <p class="section-sub reveal" style="--delay:0.1s">Logo, Nebim ve Mikro Türkiye'de güçlü, özel yazılım da değerli. Yine de bazı kapılar bu modellerle kolay açılmıyor.</p>
+      <p class="section-sub reveal" style="--delay:0.1s">Logo, Nebim, Mikro ve diğer yerel ERP'ler Türkiye'de güçlü. Yine de bu modeller, partnerin büyümesini birkaç noktada sınırlıyor.</p>
       <div class="grid-2">
         <div class="card problem-card reveal" style="--delay:0s">
-          <span class="card-icon">🧩</span>
-          <h3>Müşteri büyüdükçe eksik modüller çıkıyor</h3>
-          <p>Muhasebe ve ERP tarafında güçlüsünüz. Ama müşteri CRM, e-ticaret, üretim ya da proje yönetimi isteyince tek çatı altında bütün bir paket sunmak zorlaşıyor.</p>
+          <span class="card-icon">🔒</span>
+          <h3>Kapalı kaynak, üreticiye bağımlılık</h3>
+          <p>Logo, Nebim ve Mikro kapalı kaynaklı. Müşteri kendine özgü bir akış istediğinde üreticinin yol haritasına ve lisans politikasına bağlı kalıyorsunuz; istediğiniz derinlikte özelleştiremiyorsunuz.</p>
         </div>
         <div class="card problem-card reveal" style="--delay:0.1s">
-          <span class="card-icon">🔁</span>
-          <h3>Tek seferlik projeler tekrar eden gelire dönüşmüyor</h3>
-          <p>Kurulum ya da özel geliştirme bitince gelir de bitiyor. Her ay aynı eforu yeniden satmak zorunda kalıyorsunuz.</p>
+          <span class="card-icon">🏷️</span>
+          <h3>Aynı ürünü satan onlarca bayiden birisiniz</h3>
+          <p>Rekabet çoğu zaman fiyata düşüyor; marjı ve lisans modelini üretici belirliyor. Kendi fikri mülkiyetinizi, kendi ürününüzü inşa edip tekrar tekrar satamadığınız için farklılaşmak zor.</p>
         </div>
         <div class="card problem-card reveal" style="--delay:0.2s">
-          <span class="card-icon">🛠️</span>
-          <h3>Her şeyi sıfırdan yazmak yavaş ve pahalı</h3>
-          <p>Özel yazılımda her modülü baştan kurup yıllarca bakımını üstleniyorsunuz. Geliştirme süresi uzuyor, marj eriyor.</p>
+          <span class="card-icon">📈</span>
+          <h3>Büyüyen müşteriyi elinizde tutamıyorsunuz</h3>
+          <p>Çok şirketli, çok para birimli ya da uluslararası konsolidasyon gerektiğinde yerel ERP yetişemiyor. En değerli müşteriniz SAP, Microsoft gibi global platformlara, yani başka bir iş ortağına kayıyor.</p>
         </div>
         <div class="card problem-card reveal" style="--delay:0.3s">
-          <span class="card-icon">🌍</span>
-          <h3>Yurt dışına ve modern beklentilere ulaşmak zor</h3>
-          <p>Çok şirketli, çok para birimli ya da uluslararası bir müşteri geldiğinde kapsam sınırlı kalabiliyor. Modern web ve mobil beklentileri karşılamak ek yük oluyor.</p>
-        </div>
-        <div class="card problem-card reveal" style="--delay:0.4s">
           <span class="card-icon">✈️</span>
           <h3>Büyüme Türkiye sınırında duruyor</h3>
           <p>Logo, Nebim ve Mikro partnerliği yalnızca Türkiye'de geçerli. Yurt dışındaki müşterilere ya da küresel pazara açılan Türk şirketlerine bu modellerle hizmet veremiyorsunuz. odoo partnerliği ise dünyanın her yerinde geçerli; sınır tanımadan büyüyorsunuz.</p>
@@ -625,7 +646,7 @@
     <div class="container">
       <span class="eyebrow reveal">Çözüm</span>
       <h2 class="section-title reveal" style="--delay:0.05s">Aynı müşteriye daha fazlasını sunun.</h2>
-      <p class="solution-body reveal" style="--delay:0.1s">odoo partneri olan ekipler Logo, Nebim, Mikro ya da özel yazılım işlerini bırakmıyor. Portföylerine 80 üzeri modülü tek çatı altında toplayan, açık kaynak kodlu, çok şirketli ve çok para birimli bir platform ekliyorlar. Sıfırdan yazmak yerine olgun bir altyapı üzerinde hızla teslim ediyor, tek seferlik projeyi tekrar eden gelire çeviriyorlar. Ve bunu tek başlarına yapmıyorlar.</p>
+      <p class="solution-body reveal" style="--delay:0.1s">odoo partneri olan ekipler Logo, Nebim, Mikro ya da diğer yerel ERP işlerini bırakmıyor. Portföylerine 80 üzeri modülü tek çatı altında toplayan, açık kaynak kodlu, çok şirketli ve çok para birimli bir platform ekliyorlar. Müşteriyi büyüdükçe rakibe kaptırmak yerine aynı müşteriye daha fazlasını satıyor, kendi çözümlerini özgürce konumlandırıyor ve bunu Türkiye sınırlarının ötesinde de yapabiliyorlar. Ve bunu tek başlarına yapmıyorlar.</p>
       <div class="grid-3">
         <div class="card outcome-card reveal" style="--delay:0s">
           <div class="outcome-num">80+</div>
@@ -732,8 +753,8 @@
           <p>Mikro müşteri tabanınıza modern, modüler ve büyümeye uygun bir platformla yeni bir gelir kolu açmak isteyenler.</p>
         </div>
         <div class="card profile-card reveal" style="--delay:0.3s">
-          <h3>Özel Yazılım Geliştiriciler</h3>
-          <p>Her projeyi sıfırdan yazmak yerine olgun bir altyapı üzerinde hızla geliştirip tekrar eden gelir kurmak isteyen ekipler. odoo'nun güçlü marka adı, büyük müşterileri kazanma kapısını da açıyor.</p>
+          <h3>Diğer Yerel ERP Partnerleri</h3>
+          <p>Yerel bir ERP ya da muhasebe çözümü satan; müşterilerine açık kaynaklı, global ve özelleştirilebilir bir platformla yeni bir gelir kolu açmak isteyen ekipler. odoo'nun güçlü marka adı, büyük müşterileri kazanma kapısını da açıyor.</p>
         </div>
       </div>
     </div>
@@ -747,7 +768,7 @@
       <div class="faq-list reveal" style="--delay:0.1s">
         <div class="faq-item">
           <button class="faq-q">Mevcut işimizi bırakmamız gerekiyor mu<span class="faq-icon"></span></button>
-          <div class="faq-a"><p>Hayır. odoo mevcut Logo, Nebim, Mikro ya da özel yazılım işinizin yanına eklenen bir gelir kolu. Aynı müşterilere eksik kalan modülleri tek platformda sunar, portföyünüzü değiştirmeden genişletirsiniz. Açık kaynak kodu sayesinde her müşteriye göre uyarlarsınız.</p></div>
+          <div class="faq-a"><p>Hayır. odoo mevcut Logo, Nebim, Mikro ya da yerel ERP işinizin yanına eklenen bir gelir kolu. Aynı müşterilere açık kaynaklı, özelleştirilebilir ve global bir platform sunar, portföyünüzü değiştirmeden genişletirsiniz. Açık kaynak kodu sayesinde her müşteriye göre uyarlarsınız.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Teknik kapasite olmadan yapabilir miyiz<span class="faq-icon"></span></button>
